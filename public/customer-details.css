@@ -1,0 +1,96 @@
+.message-success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Ensure the main content doesn't overlap with the header */
+.main-content {
+    position: relative;
+    background: #fff;
+    width: calc(100% - 116px); /* Adjust width to account for sidebar */
+    padding: 1rem; /* Increase padding to prevent overlap */
+}
+
+/* Add space below the header */
+.header-main {
+    margin-bottom: 1rem; /* Ensure space between header and main content */
+}
+
+/* Ensure the customer details section is responsive */
+.customer-page {
+    padding: 1rem; /* Add padding to the customer details section */
+}
+
+.customer-box {
+    background: #f9f9f9; /* Add a background color to distinguish it */
+    border-radius: 8px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 1.5rem; /* Increase padding for better spacing */
+    max-width: 100%; /* Limit the maximum width */
+    margin: 0 auto; /* Center align */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    margin: 20px 0px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="tel"], input[type="checkbox"], input[type="radio"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]{    
+    width: 15px;
+}
+
+.customer-name {
+    display: flex;
+    gap: 1rem;
+}
+
+.customer-gender label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group {
+    margin: 1rem 0;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #E84545;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e2395b;
+}

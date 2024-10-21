@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <h1>Flight Booking Details</h1>
+
+    <p>Flight Number: {{flightNumber}}</p>
+    <p>Departure: {{departure}}</p>
+    <p>Arrival: {{arrival}}</p>
+    <p>Departure Date: {{departureDate}}</p>
+    <p>Seat Number: {{seatNumber}}</p>
+    <p>Class: {{travelClass}}</p>
+
+    <h2>Price Comparison</h2>
+    <p>Your Price: ${{yourFlightPrice}}</p>
+    <p>Lowest Competitor Price: ${{lowestPrice}}</p>
+    <p>{{message}}</p>
+
+    {{!-- Optionally, display a button to proceed with booking --}}
+    <form action="/confirm-booking" method="post">
+        <input type="hidden" name="customerId" value="{{customerId}}">
+        <input type="hidden" name="flightNumber" value="{{flightNumber}}">
+        <button type="submit">Confirm Booking</button>
+    </form>
+</body>
+</html>
